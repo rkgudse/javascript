@@ -6,6 +6,6 @@ const box = document.querySelector('.box')
 // box.innerText = "메리 크리스마스!";
 
 // 2. innerHtml:안의 내용을 태그로 변환
-box.innerHtml = "<div class='merry' 메리 크리스마스";
+// box.innerHtml = "<div class='merry' 메리 크리스마스";
 
 
