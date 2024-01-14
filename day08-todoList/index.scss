@@ -1,0 +1,140 @@
+
+
+body{
+    background-color: #f0efe9;
+
+}
+.todolist{
+    width: 500px;
+    height: 100vh;
+    margin: 100px auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.todoList__box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 60%;
+    width: 80%;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid #808080;
+    padding: 30px 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
+.calender__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .date__box{
+        display: flex;
+        align-items: center;
+    
+        gap: 5px;
+        .left{
+            font-size: 36px;
+            font-weight: bold;
+
+        }
+        .right{
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .day__box{
+        font-size: 26px;
+    }
+}
+
+.items__box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 450px;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+
+        
+    }
+
+    .add__box{
+        position: relative;
+        top:
+        opacity: 0;
+    }
+    
+    .item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 10px;
+        font-family: 'Tektur', sans-serif;
+
+
+        button{
+            align-items: center;
+            background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+            border: 0;
+            border-radius: 10px;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            font-family: "Codec cold",sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            height: 54px;
+            justify-content: center;
+            letter-spacing: .4px;
+            line-height: 1;
+            max-width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+         
+        }
+    }
+}
+.todolist__addbutton{
+    position: relative;
+    top: -30px;
+    left: 10px;
+    
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+
+
+
+
