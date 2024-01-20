@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <style>
+        body{
+            background-color: #0B60B0;
+        }
+        .circleBox{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .circle{
+            margin: -50px;
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            opacity: 0.5;
+            border-radius: 50%;
+        }
+
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            color: white;
+            width: 400px;
+        }
+        .top{
+            padding: 10px 30px;
+            border: 2px solid white;
+            text-align: center;
+            transition: all 0.5s;
+       
+        }
+        .bottom {
+           
+            border: 2px solid white;
+            border-top: none;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+        .bottom a{
+            color: white;
+            padding: 20px 0;
+            width: 50%;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.2s ease-out;
+
+        }
+        a:hover{
+            background-color: white;
+            color: black;
+        }
+        .line{
+            border: 1px solid white;
+        }
+
+    </style>
+
+</head>
+    
+
+<body>
+    <div class="circleBox">
+    <div class="circle"></div>
+    </div>
+
+    <div class="box">
+        <div class="top">
+            <p>삼겹살을 먹고 싶나요?</p>
+        </div>
+        <div class="bottom">
+            <a href="#" class="yes">네</a>
+            
+            <span class="line"></span>
+            <a href="#" class="no">아니요</a>
+        </div>
+    </div>
+
+</body>
+</html>
