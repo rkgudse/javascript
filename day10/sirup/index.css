@@ -1,0 +1,50 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background: url(imags/bg-pc.webp); 
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+img{
+    width: 100%;
+}
+
+.contentwrap{
+    position: relative;
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+
+}
+
+.contentwrap > div{
+    position: absolute;
+}
+
+.contentwrap > div > img{
+    transform-style: preserve-3d; 
+    transform-origin: 50% 50%;
+}
+
+.shadow{
+    width: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.human{
+    width: 1200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text{
+    width: 400px;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-10%);
+}

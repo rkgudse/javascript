@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #1A237E, #FF6F00); /* 왼쪽에서 오른쪽으로 블루에서 오렌지로 변화 */
+  overflow: hidden;
+}
+
+img{
+  width: 100%;
+}
+.container{
+  position: relative;
+}
+
+.container .card{
+  position: relative;
+  width: 400px;
+  height: 600px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card > div{
+  position: absolute;
+}
+
+.card > div > img{
+  transform-style:preserve-3d;
+  transform-origin: 50% 50%;
+}
+.player{
+  width: 450px;
+  left: 30%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+}
+
+.item{
+  width: 220px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.logo{
+  width: 250px;
+  left: 10%;
+  top: 20%;
+  transform: rotate(-5deg);
+}
+
+.sports{
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  white-space: nowrap;
+  font-family: 'Arial Black', Gadget, sans-serif; /* 볼드한 폰트 */
+  color: #1A237E; /* 강렬한 색상 */
+  font-size: 36px; /* 큰 폰트 사이즈 */
+  text-shadow: 3px 3px 0px #FFEB3B; /* 입체감을 주는 그림자 */
+  transform: skew(-10deg); /* 약간 기울인 텍스트 */
+}
